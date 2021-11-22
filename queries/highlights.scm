@@ -6,5 +6,10 @@
     (binary)
     (ascii)
 ] @constant
+[
+    (onecommand)
+    (twocommand)
+    (twooptcommand)
+] @function
 (devicename) @constant.builtin
 (ERROR) @error

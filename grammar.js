@@ -27,11 +27,11 @@ module.exports = grammar({
     ascii: $ => /'[a-zA-Z]'/,
     binary: $ => /[01]+[bB]/,
     whitespace: $ => /\s+/,
-    _statement: $ => choice($.onecommand, $.twocommand, $.twooptcommand),
+    _statement: $ => choice(seq($.onecommand, $._arguments), seq($.twocommand, $._arguments, ',', $._arguments), seq($.twooptcommand, $._arguments, optional(seq(',', $._arguments)))),
     zerocommand: $ => choice('clrw', 'clrwdt', 'nop', 'option', 'sleep', 'retfie', 'return'),
-    onecommand: $ => seq(choice(/[oO][rR][gG]/, /[eE][qQ][uU]/, caseInsensitive('clrf'),caseInsensitive('andlw'), caseInsensitive('call'), caseInsensitive('goto'), caseInsensitive('iorlw'), caseInsensitive('movlw'), caseInsensitive('movwf'), caseInsensitive('retlw'), caseInsensitive('tris'), caseInsensitive('xorlw'), caseInsensitive('addlw'), caseInsensitive('sublw')), $._arguments),
-    twocommand: $ => seq(choice( caseInsensitive('bcf'), caseInsensitive('bsf'), caseInsensitive('btfsc'), caseInsensitive('btfsc'), caseInsensitive('btfss')), $._arguments, ',', $._arguments),
-    twooptcommand: $ => seq(choice(caseInsensitive('addwf'), caseInsensitive('andwf'), caseInsensitive('incf'), caseInsensitive('incfsz'), caseInsensitive('comf'), caseInsensitive('decf'), caseInsensitive('decfsz'), caseInsensitive('iorwf'), caseInsensitive('rlf'), caseInsensitive('rrf'), caseInsensitive('subwf'), caseInsensitive('swapf'), caseInsensitive('xorwf'),  caseInsensitive('movf')), $._arguments, optional(seq(',', $._arguments))),
+    onecommand: $ => choice(/[oO][rR][gG]/, /[eE][qQ][uU]/, caseInsensitive('clrf'),caseInsensitive('andlw'), caseInsensitive('call'), caseInsensitive('goto'), caseInsensitive('iorlw'), caseInsensitive('movlw'), caseInsensitive('movwf'), caseInsensitive('retlw'), caseInsensitive('tris'), caseInsensitive('xorlw'), caseInsensitive('addlw'), caseInsensitive('sublw')),
+    twocommand: $ => choice( caseInsensitive('bcf'), caseInsensitive('bsf'), caseInsensitive('btfsc'), caseInsensitive('btfsc'), caseInsensitive('btfss')),
+    twooptcommand: $ => choice(caseInsensitive('addwf'), caseInsensitive('andwf'), caseInsensitive('incf'), caseInsensitive('incfsz'), caseInsensitive('comf'), caseInsensitive('decf'), caseInsensitive('decfsz'), caseInsensitive('iorwf'), caseInsensitive('rlf'), caseInsensitive('rrf'), caseInsensitive('subwf'), caseInsensitive('swapf'), caseInsensitive('xorwf'),  caseInsensitive('movf')),
     operation: $ => 'blup'
 
   }
