@@ -1,0 +1,598 @@
+[
+  {
+    "type": "comment",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "devicedef",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "devicename",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "devicename",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "line",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "label",
+          "named": true
+        },
+        {
+          "type": "onecommand",
+          "named": true
+        },
+        {
+          "type": "twocommand",
+          "named": true
+        },
+        {
+          "type": "twooptcommand",
+          "named": true
+        },
+        {
+          "type": "whitespace",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "onecommand",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii",
+          "named": true
+        },
+        {
+          "type": "binary",
+          "named": true
+        },
+        {
+          "type": "decimal",
+          "named": true
+        },
+        {
+          "type": "hex",
+          "named": true
+        },
+        {
+          "type": "label",
+          "named": true
+        },
+        {
+          "type": "operation",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "comment",
+          "named": true
+        },
+        {
+          "type": "devicedef",
+          "named": true
+        },
+        {
+          "type": "line",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "twocommand",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii",
+          "named": true
+        },
+        {
+          "type": "binary",
+          "named": true
+        },
+        {
+          "type": "decimal",
+          "named": true
+        },
+        {
+          "type": "hex",
+          "named": true
+        },
+        {
+          "type": "label",
+          "named": true
+        },
+        {
+          "type": "operation",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "twooptcommand",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ascii",
+          "named": true
+        },
+        {
+          "type": "binary",
+          "named": true
+        },
+        {
+          "type": "decimal",
+          "named": true
+        },
+        {
+          "type": "hex",
+          "named": true
+        },
+        {
+          "type": "label",
+          "named": true
+        },
+        {
+          "type": "operation",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\n",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "12C508",
+    "named": false
+  },
+  {
+    "type": "12C509",
+    "named": false
+  },
+  {
+    "type": "12C671",
+    "named": false
+  },
+  {
+    "type": "12C672",
+    "named": false
+  },
+  {
+    "type": "12E518",
+    "named": false
+  },
+  {
+    "type": "12E519",
+    "named": false
+  },
+  {
+    "type": "12F629",
+    "named": false
+  },
+  {
+    "type": "12F675",
+    "named": false
+  },
+  {
+    "type": "12c508",
+    "named": false
+  },
+  {
+    "type": "12c509",
+    "named": false
+  },
+  {
+    "type": "12c671",
+    "named": false
+  },
+  {
+    "type": "12c672",
+    "named": false
+  },
+  {
+    "type": "12e518",
+    "named": false
+  },
+  {
+    "type": "12e519",
+    "named": false
+  },
+  {
+    "type": "12f629",
+    "named": false
+  },
+  {
+    "type": "12f675",
+    "named": false
+  },
+  {
+    "type": "16C53",
+    "named": false
+  },
+  {
+    "type": "16C54",
+    "named": false
+  },
+  {
+    "type": "16C55",
+    "named": false
+  },
+  {
+    "type": "16C56",
+    "named": false
+  },
+  {
+    "type": "16C57",
+    "named": false
+  },
+  {
+    "type": "16C58",
+    "named": false
+  },
+  {
+    "type": "16C61",
+    "named": false
+  },
+  {
+    "type": "16C62",
+    "named": false
+  },
+  {
+    "type": "16C620",
+    "named": false
+  },
+  {
+    "type": "16C621",
+    "named": false
+  },
+  {
+    "type": "16C622",
+    "named": false
+  },
+  {
+    "type": "16C63",
+    "named": false
+  },
+  {
+    "type": "16C64",
+    "named": false
+  },
+  {
+    "type": "16C65",
+    "named": false
+  },
+  {
+    "type": "16C66",
+    "named": false
+  },
+  {
+    "type": "16C71",
+    "named": false
+  },
+  {
+    "type": "16C72",
+    "named": false
+  },
+  {
+    "type": "16C73",
+    "named": false
+  },
+  {
+    "type": "16C74",
+    "named": false
+  },
+  {
+    "type": "16C76",
+    "named": false
+  },
+  {
+    "type": "16C77",
+    "named": false
+  },
+  {
+    "type": "16C83",
+    "named": false
+  },
+  {
+    "type": "16C84",
+    "named": false
+  },
+  {
+    "type": "16E623",
+    "named": false
+  },
+  {
+    "type": "16E624",
+    "named": false
+  },
+  {
+    "type": "16E625",
+    "named": false
+  },
+  {
+    "type": "16F818",
+    "named": false
+  },
+  {
+    "type": "16F819",
+    "named": false
+  },
+  {
+    "type": "16F83",
+    "named": false
+  },
+  {
+    "type": "16F84",
+    "named": false
+  },
+  {
+    "type": "16F873",
+    "named": false
+  },
+  {
+    "type": "16F874",
+    "named": false
+  },
+  {
+    "type": "16F876",
+    "named": false
+  },
+  {
+    "type": "16F877",
+    "named": false
+  },
+  {
+    "type": "16c53",
+    "named": false
+  },
+  {
+    "type": "16c54",
+    "named": false
+  },
+  {
+    "type": "16c55",
+    "named": false
+  },
+  {
+    "type": "16c56",
+    "named": false
+  },
+  {
+    "type": "16c57",
+    "named": false
+  },
+  {
+    "type": "16c58",
+    "named": false
+  },
+  {
+    "type": "16c61",
+    "named": false
+  },
+  {
+    "type": "16c62",
+    "named": false
+  },
+  {
+    "type": "16c620",
+    "named": false
+  },
+  {
+    "type": "16c621",
+    "named": false
+  },
+  {
+    "type": "16c622",
+    "named": false
+  },
+  {
+    "type": "16c63",
+    "named": false
+  },
+  {
+    "type": "16c64",
+    "named": false
+  },
+  {
+    "type": "16c65",
+    "named": false
+  },
+  {
+    "type": "16c66",
+    "named": false
+  },
+  {
+    "type": "16c71",
+    "named": false
+  },
+  {
+    "type": "16c72",
+    "named": false
+  },
+  {
+    "type": "16c73",
+    "named": false
+  },
+  {
+    "type": "16c74",
+    "named": false
+  },
+  {
+    "type": "16c76",
+    "named": false
+  },
+  {
+    "type": "16c77",
+    "named": false
+  },
+  {
+    "type": "16c83",
+    "named": false
+  },
+  {
+    "type": "16c84",
+    "named": false
+  },
+  {
+    "type": "16e623",
+    "named": false
+  },
+  {
+    "type": "16e624",
+    "named": false
+  },
+  {
+    "type": "16e625",
+    "named": false
+  },
+  {
+    "type": "16f818",
+    "named": false
+  },
+  {
+    "type": "16f819",
+    "named": false
+  },
+  {
+    "type": "16f83",
+    "named": false
+  },
+  {
+    "type": "16f84",
+    "named": false
+  },
+  {
+    "type": "16f873",
+    "named": false
+  },
+  {
+    "type": "16f874",
+    "named": false
+  },
+  {
+    "type": "16f876",
+    "named": false
+  },
+  {
+    "type": "16f877",
+    "named": false
+  },
+  {
+    "type": "ascii",
+    "named": true
+  },
+  {
+    "type": "binary",
+    "named": true
+  },
+  {
+    "type": "clrw",
+    "named": false
+  },
+  {
+    "type": "clrwdt",
+    "named": false
+  },
+  {
+    "type": "decimal",
+    "named": true
+  },
+  {
+    "type": "device",
+    "named": false
+  },
+  {
+    "type": "hex",
+    "named": true
+  },
+  {
+    "type": "label",
+    "named": true
+  },
+  {
+    "type": "nop",
+    "named": false
+  },
+  {
+    "type": "operation",
+    "named": true
+  },
+  {
+    "type": "option",
+    "named": false
+  },
+  {
+    "type": "retfie",
+    "named": false
+  },
+  {
+    "type": "return",
+    "named": false
+  },
+  {
+    "type": "sleep",
+    "named": false
+  },
+  {
+    "type": "whitespace",
+    "named": true
+  }
+]
